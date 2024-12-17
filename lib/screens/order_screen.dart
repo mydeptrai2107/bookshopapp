@@ -15,6 +15,7 @@ class _OrderScreenState extends State<OrderScreen> {
     context.read<UserProvider>().getOrders();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<UserProvider>(builder: (context, provider, child) {
@@ -42,14 +43,33 @@ class _OrderScreenState extends State<OrderScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Icon(Icons.location_on_rounded),
-                                const Text('Address : '),
+                                const Text(
+                                  'Address : ',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
                                 Text(
-                                    '${item.address.name}\n${item.address.address}\n${item.address.provinceCity}\n${item.address.numberPhone}'),
+                                  '${item.address.name}\n${item.address.address}\n${item.address.provinceCity}\n${item.address.numberPhone}',
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
                               ],
                             ),
-                            Text('Amount: Rs.'
-                                '${item.products.length}'),
-                            Text('Total price: Rs. ${item.totalPrice}'),
+                            Text(
+                              'Amount: Rs.'
+                              '${item.products.length}',
+                              style: const TextStyle(
+                                fontSize: 12,
+                              ),
+                            ),
+                            Text(
+                              'Total price: Rs. ${item.totalPrice}',
+                              style: const TextStyle(
+                                fontSize: 12,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -77,10 +97,22 @@ class _OrderScreenState extends State<OrderScreen> {
                                               child: Column(
                                                 children: [
                                                   Expanded(
-                                                      child: Image.network(
-                                                          e.cartImage)),
-                                                  Text(e.cartName),
-                                                  Text('Rs. ${e.cartPrice}'),
+                                                    child: Image.network(
+                                                      e.cartImage,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    e.cartName,
+                                                    style: const TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    'Rs. ${e.cartPrice}',
+                                                    style: const TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -94,8 +126,16 @@ class _OrderScreenState extends State<OrderScreen> {
                             ),
                           );
                         },
-                        label:const  Text('Details'),
-                        icon:const  Icon(Icons.arrow_drop_down_circle_outlined),
+                        label: const Text(
+                          'Details',
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                        icon: const Icon(
+                          Icons.arrow_drop_down_circle_outlined,
+                          size: 15,
+                        ),
                       ),
                     ],
                   ),

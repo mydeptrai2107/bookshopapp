@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -33,10 +30,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -64,6 +58,26 @@ class DefaultFirebaseOptions {
     projectId: 'bookstore-2dc8b',
     storageBucket: 'bookstore-2dc8b.firebasestorage.app',
     iosBundleId: 'com.example.ct484Project',
+  );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyChnYNJEPODsdaURlWz2VUAzvkNPJU1_Tk',
+    appId: '1:685859908526:web:edd1d719301ffe0cf0f63f',
+    messagingSenderId: '685859908526',
+    projectId: 'bookstore-2dc8b',
+    authDomain: 'bookstore-2dc8b.firebaseapp.com',
+    storageBucket: 'bookstore-2dc8b.firebasestorage.app',
+    measurementId: 'G-FX5QLH7VEJ',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyChnYNJEPODsdaURlWz2VUAzvkNPJU1_Tk',
+    appId: '1:685859908526:web:06782769d20dd101f0f63f',
+    messagingSenderId: '685859908526',
+    projectId: 'bookstore-2dc8b',
+    authDomain: 'bookstore-2dc8b.firebaseapp.com',
+    storageBucket: 'bookstore-2dc8b.firebasestorage.app',
+    measurementId: 'G-PF0TWCC8EZ',
   );
 
 }
