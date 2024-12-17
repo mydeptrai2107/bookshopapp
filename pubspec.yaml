@@ -1,0 +1,36 @@
+name: ct484_project
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_signin_button: ^2.0.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.5.0
+  firebase_core: ^3.8.0
+  firebase_storage: ^12.3.6
+  firebase_messaging: ^15.1.5
+  get: ^4.6.6
+  image_picker: ^1.1.2
+  provider: ^6.1.2
+  badges: ^3.1.2
+  cool_alert: ^2.0.1
+  ndialog: ^4.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
