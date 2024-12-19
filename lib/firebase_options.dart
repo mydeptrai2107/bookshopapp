@@ -44,11 +44,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC-Kc_sPcUCN1KLBzotBka9X9Og7aX715Y',
-    appId: '1:685859908526:android:308a38ab43fc5cd2f0f63f',
-    messagingSenderId: '685859908526',
-    projectId: 'bookstore-2dc8b',
-    storageBucket: 'bookstore-2dc8b.firebasestorage.app',
+    apiKey: 'AIzaSyCLpUDHtUh4Ap_MvurugtoB1mLnx-l76es',
+    appId: '1:62654749324:android:282a6f1d8c418e4925f9a9',
+    messagingSenderId: '62654749324',
+    projectId: 'bookstore-4fc64',
+    storageBucket: 'bookstore-4fc64.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -61,23 +61,23 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyChnYNJEPODsdaURlWz2VUAzvkNPJU1_Tk',
-    appId: '1:685859908526:web:edd1d719301ffe0cf0f63f',
-    messagingSenderId: '685859908526',
-    projectId: 'bookstore-2dc8b',
-    authDomain: 'bookstore-2dc8b.firebaseapp.com',
-    storageBucket: 'bookstore-2dc8b.firebasestorage.app',
-    measurementId: 'G-FX5QLH7VEJ',
+    apiKey: 'AIzaSyDYyKRahdjnzLhn5ZUtdiNXw5XEzgiH-dA',
+    appId: '1:62654749324:web:38abc62a3370da9a25f9a9',
+    messagingSenderId: '62654749324',
+    projectId: 'bookstore-4fc64',
+    authDomain: 'bookstore-4fc64.firebaseapp.com',
+    storageBucket: 'bookstore-4fc64.firebasestorage.app',
+    measurementId: 'G-031153VPJ1',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyChnYNJEPODsdaURlWz2VUAzvkNPJU1_Tk',
-    appId: '1:685859908526:web:06782769d20dd101f0f63f',
-    messagingSenderId: '685859908526',
-    projectId: 'bookstore-2dc8b',
-    authDomain: 'bookstore-2dc8b.firebaseapp.com',
-    storageBucket: 'bookstore-2dc8b.firebasestorage.app',
-    measurementId: 'G-PF0TWCC8EZ',
+    apiKey: 'AIzaSyDYyKRahdjnzLhn5ZUtdiNXw5XEzgiH-dA',
+    appId: '1:62654749324:web:c2b0a5469d0dd93725f9a9',
+    messagingSenderId: '62654749324',
+    projectId: 'bookstore-4fc64',
+    authDomain: 'bookstore-4fc64.firebaseapp.com',
+    storageBucket: 'bookstore-4fc64.firebasestorage.app',
+    measurementId: 'G-6SXXF0R2XM',
   );
 
 }
